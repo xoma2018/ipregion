@@ -1074,7 +1074,7 @@ curl_wrapper() {
     --compressed
     --location
     --retry-connrefused
-    --retry-all-errors
+    
     --retry "$CURL_RETRIES"
     --max-time "$CURL_TIMEOUT"
     -w '\n%{http_code}'
